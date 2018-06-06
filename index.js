@@ -65,7 +65,7 @@ function startServer() {
         res.send(update());
     });
 
-    app.listen(3000, () => console.log('tvmaze is listening on port 3000'));    
+    app.listen(8000, () => console.log('tvmaze is listening on port 3000'));    
 }
 
 startServer();
