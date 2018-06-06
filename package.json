@@ -23,5 +23,8 @@
     "npm": "^6.1.0",
     "request-promise": "^4.2.2",
     "rxjs": "^6.2.0"
+  },
+  "devDependencies": {
+    "request": "^2.87.0"
   }
 }
