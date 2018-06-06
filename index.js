@@ -60,12 +60,15 @@ function startServer() {
     console.log('startServer');
 
     const app = express();
+    app.set('port', process.env.PORT || 5000);
 
     app.get('/update', (req, res) => {
         res.send(update());
     });
 
-    app.listen(8000, () => console.log('tvmaze is listening on port 3000'));    
+    app.listen(app.get('port'), () => {
+        console.log('tvmaze4rtl is running on port', app.get('port'));
+    });
 }
 
 startServer();
