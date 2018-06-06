@@ -1,0 +1,27 @@
+{
+  "name": "tvmaze",
+  "version": "1.0.0",
+  "description": "tvmzaze scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrijk/tvmaze.git"
+  },
+  "author": "Maurits Rijk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrijk/tvmaze/issues"
+  },
+  "homepage": "https://github.com/mrijk/tvmaze#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "install": "^0.11.0",
+    "lodash": "^4.17.10",
+    "npm": "^6.1.0",
+    "request-promise": "^4.2.2",
+    "rxjs": "^6.2.0"
+  }
+}

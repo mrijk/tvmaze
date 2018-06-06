@@ -1,0 +1,9 @@
+*~
+.idea/
+node_modules/
+npm-debug.log
+coverage/
+report/
+reports/
+*.iml
+_book
