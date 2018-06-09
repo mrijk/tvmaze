@@ -13,7 +13,7 @@ This demo tvmaze scraper exposes a single endpoint:
 LIMIT has a default value of 10
 PAGE has a default value of 1
 
-Example
+Example (using [https://tvmaze4rtl.herokuapp.com/cast?limit=1&page=10](https://tvmaze4rtl.herokuapp.com/cast?limit=1&page=10))
 
 ```bash
 $ curl "https://tvmaze4rtl.herokuapp.com/cast?limit=1&page=10" | jq .
