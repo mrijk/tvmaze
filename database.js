@@ -1,11 +1,11 @@
 const MongoClient = require('mongodb').MongoClient;
 const Promise = require("bluebird");
 
-const uri = 'mongodb+srv://tvmaze4rtl:pFS1JCA2tFe7TDiy@cluster0-snmrb.mongodb.net/test?retryWrites=true'
-
 const getCastCollection = db => db.collection('cast');
 
 function connectToDatabase() {
+    const uri = process.env.MONGODB_URI;
+
     return new Promise((resolve, reject) => {
     
         MongoClient.connect(uri, (error, client) => {

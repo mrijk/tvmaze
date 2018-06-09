@@ -20,6 +20,7 @@ function getShow(id) {
     return rp(options)
         .then(extractCast)
         .catch(error => {
+            console.log(error);
             console.log(`Error while getting show ${id}`);
         });
 }
