@@ -29,8 +29,8 @@ function parseAndStoreShows(db, shows) {
     // Build source with throttle
     const source = from(ids)
           .pipe(
-              zip(interval(THROTTLE), (a,) => a),
-              take(100));
+              zip(interval(THROTTLE), (a,) => a));
+//              take(100));
     
     source.subscribe(
         id => getShow(id).then(partial(storeCast, db)),
