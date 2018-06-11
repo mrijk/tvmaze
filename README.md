@@ -77,7 +77,7 @@ Deployment
 
 We deployed a MongoDB instance on https://cloud.mongodb.com/
 
-The appication itself is deployed on Heroku.
+The application itself is deployed on Heroku.
 
 Implementation details
 ----------------------
