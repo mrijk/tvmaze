@@ -9,7 +9,7 @@ const {delay, take, zip} = require('rxjs/operators');
 const {connectToDatabase, getCast, storeCast} = require('./database');
 const {getAllShows, getShow} = require('./tvmaze');
 
-const THROTTLE = 300;
+const THROTTLE = 400;
 
 function update(db) {
     getAllShows()
@@ -56,7 +56,7 @@ function startServer() {
             getCast(db, skip, limit)
                 .then(result => res.send(result));
         });
-        
+
         app.get('/update', (req, res) => {
             res.send(update(db));
         });
